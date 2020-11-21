@@ -1,3 +1,8 @@
+import torch
+import torch.nn as nn
+
+from st_lstmcell import SpatioTemporalLSTMCell
+
 class PredRNN(nn.Module):
     def __init__(self, num_layers, num_h):
         super(PredRNN, self).__init__()
